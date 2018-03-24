@@ -16,6 +16,7 @@ CREATE TABLE lightsabers (
   owner_id INT8 REFERENCES jedis(id)
 );
 
+
 INSERT INTO jedis (name, rank, darkside)
 VALUES ('Luke', 10, false);
 
@@ -33,3 +34,20 @@ VALUES ('purple', 'black', 1);
 
 INSERT INTO lightsabers (colours, hilt_metal, owner_id)
 VALUES ('green', 'silver', 2);
+
+
+UPDATE jedis
+SET rank = 70
+WHERE name = 'Obi Wan';
+
+UPDATE jedis
+SET darkside = false
+WHERE name = 'Obi Wan';
+
+UPDATE jedis
+SET rank = 40
+WHERE name = 'Anikin';
+
+UPDATE jedis
+set darkside = true
+WHERE name = 'Anikin';
