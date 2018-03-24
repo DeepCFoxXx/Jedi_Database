@@ -51,3 +51,17 @@ WHERE name = 'Anikin';
 UPDATE jedis
 set darkside = true
 WHERE name = 'Anikin';
+
+--DELETE FROM jedis WHERE name = 'Darth Vader';
+
+--DELETE FROM jedis WHERE id = 5;
+
+SELECT * FROM jedis;
+
+SELECT COUNT(*) FROM jedis;
+
+SELECT * FROM jedis ORDER BY name ASC;
+
+SELECT jedis.name, lightsabers.colours
+ FROM jedis, lightsabers
+ WHERE jedis.id = lightsabers.owner_id;
