@@ -14,3 +14,16 @@ CREATE TABLE lightsabers (
   hilt_metal VARCHAR(255)
   own_id INT8
 );
+
+
+INSERT INTO jedis (name, lightsaber, rank, darkside)
+VALUES ('Luke', 'blue', 10, false);
+
+INSERT INTO jedis (name, lightsaber, rank, darkside)
+VALUES ('Darth Vader', 'red', 100, true);
+
+INSERT INTO jedis (name, lightsaber)
+VALUES ('Obi Wan', 'blue');
+
+INSERT INTO jedis (name, rank, darkside)
+VALUES ('Anikin', 12, false);
