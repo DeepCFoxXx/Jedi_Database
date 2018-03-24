@@ -1,3 +1,4 @@
+DROP TABLE lightsabers;
 DROP TABLE jedis;
 
 
@@ -14,3 +15,21 @@ CREATE TABLE lightsabers (
   hilt_metal VARCHAR(255),
   owner_id INT8 REFERENCES jedis(id)
 );
+
+INSERT INTO jedis (name, rank, darkside)
+VALUES ('Luke', 10, false);
+
+INSERT INTO jedis (name, rank, darkside)
+VALUES ('Darth Vader', 100, true);
+
+INSERT INTO jedis (name)
+VALUES ('Obi Wan');
+
+INSERT INTO jedis (name, rank, darkside)
+VALUES ('Anikin', 45, false);
+
+INSERT INTO lightsabers (colours, hilt_metal, owner_id)
+VALUES ('purple', 'black', 1);
+
+INSERT INTO lightsabers (colours, hilt_metal, owner_id)
+VALUES ('green', 'silver', 2);
