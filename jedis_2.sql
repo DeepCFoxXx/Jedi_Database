@@ -7,3 +7,10 @@ CREATE TABLE jedis (
   rank INT2,
   darkside BOOLEAN
 );
+
+CREATE TABLE lightsabers (
+  id SERIAL8
+  color VARCHAR(255)
+  hilt_metal VARCHAR(255)
+  own_id INT8
+);
